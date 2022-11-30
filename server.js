@@ -21,10 +21,9 @@ app.get('/magic/:question', function(req,res){
     res.send('This was your initial question:'+ req.params.question + '<h1>'+'Here is your answer: '+magicMsg.getMessage(responses)+'</h1>');
 
 });
-//add a tag
-//res.send(req.params.numberOfBottles + " Bottles of beer on the wall, <a href = '" + (req.params.numberOfBottles-1)+ "'>take one down, pass it around</a>")
+
  
 //app listening on port
 app.listen(port, ()=>{
     console.log("listeting on port "+port);
-})
+});
